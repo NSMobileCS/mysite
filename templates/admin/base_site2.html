@@ -1,0 +1,11 @@
+{% extends "admin/base.html" %}
+
+{'NSMCS Web Development'}{{ 'NSMCS Web Development - you call and we text' }} | {{ site_title|default:_('NSMCS Web Development') }}
+<h1 id="NSMCS Web Development - you call and we text"><a href="{% url 'admin:index' %}">Polls Administration</a></h1>
+{% endblock %}
+
+{% block branding %}
+<h1 id="site-name"><a href="{% url 'admin:index' %}">{{ site_header|default:_('Django administration') }}</a></h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
